@@ -1,0 +1,48 @@
+unit acpdv.view.principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Buttons;
+
+type
+  TFormPrincipal = class(TForm)
+    pnlContainer: TPanel;
+    pnlTitulo: TPanel;
+    pnlButton: TPanel;
+    pnlMain: TPanel;
+    pnlOperacoes: TPanel;
+    pnlGrid: TPanel;
+    Panel3: TPanel;
+    Shape3: TShape;
+    SpeedButton3: TSpeedButton;
+    Panel1: TPanel;
+    Shape1: TShape;
+    btnCancelarOperacao: TSpeedButton;
+    Panel2: TPanel;
+    Shape2: TShape;
+    btnCnsultarPreco: TSpeedButton;
+    Panel4: TPanel;
+    Shape4: TShape;
+    btnAbrirCaixa: TSpeedButton;
+    Panel5: TPanel;
+    Shape5: TShape;
+    SpeedButton5: TSpeedButton;
+    Panel6: TPanel;
+    Shape6: TShape;
+    SpeedButton6: TSpeedButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormPrincipal: TFormPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+end.
