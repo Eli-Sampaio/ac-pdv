@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Buttons;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Buttons, Data.DB,
+  Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls;
 
 type
   TFormPrincipal = class(TForm)
@@ -14,24 +15,30 @@ type
     pnlMain: TPanel;
     pnlOperacoes: TPanel;
     pnlGrid: TPanel;
-    Panel3: TPanel;
+    pnlCancelarItem: TPanel;
     Shape3: TShape;
-    SpeedButton3: TSpeedButton;
-    Panel1: TPanel;
+    btnCancelarItem: TSpeedButton;
+    pnlCancelarOperacao: TPanel;
     Shape1: TShape;
     btnCancelarOperacao: TSpeedButton;
-    Panel2: TPanel;
+    pnlConsultarPreco: TPanel;
     Shape2: TShape;
     btnCnsultarPreco: TSpeedButton;
-    Panel4: TPanel;
+    pnlAbrirCaixa: TPanel;
     Shape4: TShape;
     btnAbrirCaixa: TSpeedButton;
-    Panel5: TPanel;
+    pnlCancelarVenda: TPanel;
     Shape5: TShape;
-    SpeedButton5: TSpeedButton;
-    Panel6: TPanel;
+    btnCancelarVenda: TSpeedButton;
+    pnlMaisFuncoes: TPanel;
     Shape6: TShape;
-    SpeedButton6: TSpeedButton;
+    btnMaisFuncoes: TSpeedButton;
+    DBGrid1: TDBGrid;
+    pnlTotalCompra: TPanel;
+    Label1: TLabel;
+    Shape7: TShape;
+    pnlEdtTotalCompra: TPanel;
+    Label2: TLabel;
   private
     { Private declarations }
   public

@@ -288,7 +288,7 @@ object FormPrincipal: TFormPrincipal
           Width = 185
           Height = 94
           Align = alClient
-          Caption = 'Mais Fun'#231#245'es >>>'
+          Caption = 'Mais Fun'#231#245'es >>'
           Flat = True
           ExplicitLeft = 80
           ExplicitTop = 40
@@ -306,22 +306,168 @@ object FormPrincipal: TFormPrincipal
       BevelOuter = bvNone
       TabOrder = 2
       object pnlOperacoes: TPanel
-        Left = 735
-        Top = 0
-        Width = 400
-        Height = 556
+        AlignWithMargins = True
+        Left = 712
+        Top = 3
+        Width = 420
+        Height = 550
         Align = alRight
         BevelOuter = bvNone
         TabOrder = 0
+        object pnlTotalCompra: TPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 477
+          Width = 414
+          Height = 70
+          Align = alBottom
+          BevelOuter = bvNone
+          TabOrder = 0
+          object Label1: TLabel
+            Left = 0
+            Top = 0
+            Width = 414
+            Height = 13
+            Align = alTop
+            Caption = 'Total da Compra'
+            ExplicitWidth = 79
+          end
+          object pnlEdtTotalCompra: TPanel
+            Left = 0
+            Top = 13
+            Width = 414
+            Height = 57
+            Align = alClient
+            BevelOuter = bvNone
+            Padding.Left = 3
+            Padding.Top = 3
+            Padding.Right = 3
+            Padding.Bottom = 3
+            TabOrder = 0
+            object Shape7: TShape
+              Left = 3
+              Top = 3
+              Width = 408
+              Height = 51
+              Align = alClient
+              Brush.Color = 7119398
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 152
+              ExplicitTop = 40
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object Label2: TLabel
+              AlignWithMargins = True
+              Left = 6
+              Top = 6
+              Width = 402
+              Height = 45
+              Align = alClient
+              Alignment = taCenter
+              Caption = 'R$ 50,99'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWhite
+              Font.Height = -27
+              Font.Name = 'Tahoma'
+              Font.Style = []
+              ParentFont = False
+              ExplicitWidth = 108
+              ExplicitHeight = 33
+            end
+          end
+        end
+        object pnlSubTotal: TPanel
+          AlignWithMargins = True
+          Left = 3
+          Top = 401
+          Width = 414
+          Height = 70
+          Align = alBottom
+          BevelOuter = bvNone
+          TabOrder = 1
+          ExplicitTop = 477
+          object Label3: TLabel
+            Left = 0
+            Top = 0
+            Width = 414
+            Height = 13
+            Align = alTop
+            Caption = 'Total da Compra'
+            ExplicitWidth = 79
+          end
+          object Panel2: TPanel
+            Left = 0
+            Top = 13
+            Width = 414
+            Height = 57
+            Align = alClient
+            BevelOuter = bvNone
+            Padding.Left = 3
+            Padding.Top = 3
+            Padding.Right = 3
+            Padding.Bottom = 3
+            TabOrder = 0
+            object Shape8: TShape
+              Left = 3
+              Top = 3
+              Width = 408
+              Height = 51
+              Align = alClient
+              Brush.Color = 7119398
+              Pen.Style = psClear
+              Shape = stRoundRect
+              ExplicitLeft = 152
+              ExplicitTop = 40
+              ExplicitWidth = 65
+              ExplicitHeight = 65
+            end
+            object Label4: TLabel
+              AlignWithMargins = True
+              Left = 6
+              Top = 6
+              Width = 402
+              Height = 45
+              Align = alClient
+              Alignment = taCenter
+              Caption = 'R$ 50,99'
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clWhite
+              Font.Height = -27
+              Font.Name = 'Tahoma'
+              Font.Style = []
+              ParentFont = False
+              ExplicitWidth = 108
+              ExplicitHeight = 33
+            end
+          end
+        end
       end
       object pnlGrid: TPanel
-        Left = 0
-        Top = 0
-        Width = 735
-        Height = 556
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 703
+        Height = 550
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 1
+        object DBGrid1: TDBGrid
+          AlignWithMargins = True
+          Left = 3
+          Top = 3
+          Width = 697
+          Height = 544
+          Align = alClient
+          BorderStyle = bsNone
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+        end
       end
     end
   end

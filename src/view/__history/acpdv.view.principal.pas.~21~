@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Buttons;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Buttons, Data.DB,
+  Vcl.Grids, Vcl.DBGrids;
 
 type
   TFormPrincipal = class(TForm)
@@ -14,24 +15,25 @@ type
     pnlMain: TPanel;
     pnlOperacoes: TPanel;
     pnlGrid: TPanel;
-    Panel3: TPanel;
+    pnlCancelarItem: TPanel;
     Shape3: TShape;
-    SpeedButton3: TSpeedButton;
-    Panel1: TPanel;
+    btnCancelarItem: TSpeedButton;
+    pnlCancelarOperacao: TPanel;
     Shape1: TShape;
-    SpeedButton1: TSpeedButton;
-    Panel2: TPanel;
+    btnCancelarOperacao: TSpeedButton;
+    pnlConsultarPreco: TPanel;
     Shape2: TShape;
-    SpeedButton2: TSpeedButton;
-    Panel4: TPanel;
+    btnCnsultarPreco: TSpeedButton;
+    pnlAbrirCaixa: TPanel;
     Shape4: TShape;
-    SpeedButton4: TSpeedButton;
-    Panel5: TPanel;
+    btnAbrirCaixa: TSpeedButton;
+    pnlCancelarVenda: TPanel;
     Shape5: TShape;
-    SpeedButton5: TSpeedButton;
-    Panel6: TPanel;
+    btnCancelarVenda: TSpeedButton;
+    pnlMaisFuncoes: TPanel;
     Shape6: TShape;
-    SpeedButton6: TSpeedButton;
+    btnMaisFuncoes: TSpeedButton;
+    DBGrid1: TDBGrid;
   private
     { Private declarations }
   public

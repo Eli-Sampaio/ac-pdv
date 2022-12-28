@@ -36,14 +36,6 @@ type
     DBGrid1: TDBGrid;
     pnlTotalCompra: TPanel;
     Label1: TLabel;
-    Shape7: TShape;
-    pnlEdtTotalCompra: TPanel;
-    Label2: TLabel;
-    pnlSubTotal: TPanel;
-    Label3: TLabel;
-    Panel2: TPanel;
-    Shape8: TShape;
-    Label4: TLabel;
   private
     { Private declarations }
   public
