@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Buttons, Data.DB,
-  Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls;
+  Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls, Vcl.Imaging.jpeg;
 
 type
   TFormPrincipal = class(TForm)
@@ -44,6 +44,24 @@ type
     Panel2: TPanel;
     Shape8: TShape;
     Label4: TLabel;
+    pnlQuantidade: TPanel;
+    Label5: TLabel;
+    Panel3: TPanel;
+    Shape9: TShape;
+    EdtQuantidade: TEdit;
+    pnlPreco: TPanel;
+    Label6: TLabel;
+    Panel4: TPanel;
+    Shape10: TShape;
+    Label7: TLabel;
+    pnlProduto: TPanel;
+    Label8: TLabel;
+    Panel5: TPanel;
+    Shape11: TShape;
+    edtProduto: TEdit;
+    pnlImagemimage: TPanel;
+    Image1: TImage;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -56,5 +74,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFormPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Application.Terminate;
+  FreeAndNil(FormPrincipal);
+end;
 
 end.
