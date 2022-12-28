@@ -268,7 +268,6 @@ object FormPrincipal: TFormPrincipal
         BevelOuter = bvNone
         Caption = 'object Panel1: TPanel'
         TabOrder = 5
-        ExplicitLeft = 945
         object Shape6: TShape
           Left = 0
           Top = 0
@@ -289,7 +288,7 @@ object FormPrincipal: TFormPrincipal
           Width = 185
           Height = 94
           Align = alClient
-          Caption = 'Mais Fun'#231#245'es >>'
+          Caption = 'Mais Fun'#231#245'es >>>'
           Flat = True
           ExplicitLeft = 80
           ExplicitTop = 40

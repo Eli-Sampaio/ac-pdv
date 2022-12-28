@@ -12,6 +12,7 @@ object FormPrincipal: TFormPrincipal
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
+  WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 13
   object pnlContainer: TPanel
@@ -22,7 +23,6 @@ object FormPrincipal: TFormPrincipal
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 1124
     object pnlTitulo: TPanel
       Left = 0
       Top = 0
@@ -40,7 +40,6 @@ object FormPrincipal: TFormPrincipal
       ParentBackground = False
       ParentFont = False
       TabOrder = 0
-      ExplicitWidth = 1124
     end
     object pnlButton: TPanel
       Left = 0
@@ -54,8 +53,7 @@ object FormPrincipal: TFormPrincipal
       Padding.Right = 5
       Padding.Bottom = 10
       TabOrder = 1
-      ExplicitWidth = 1124
-      object Panel3: TPanel
+      object pnlCancelarItem: TPanel
         AlignWithMargins = True
         Left = 757
         Top = 10
@@ -68,13 +66,13 @@ object FormPrincipal: TFormPrincipal
         BevelOuter = bvNone
         Caption = 'object Panel1: TPanel'
         TabOrder = 0
-        ExplicitLeft = 5
         object Shape3: TShape
           Left = 0
           Top = 0
           Width = 185
           Height = 94
           Align = alClient
+          Brush.Color = 14341341
           Pen.Style = psClear
           Shape = stRoundRect
           ExplicitLeft = 64
@@ -82,12 +80,13 @@ object FormPrincipal: TFormPrincipal
           ExplicitWidth = 65
           ExplicitHeight = 65
         end
-        object SpeedButton3: TSpeedButton
+        object btnCancelarItem: TSpeedButton
           Left = 0
           Top = 0
           Width = 185
           Height = 94
           Align = alClient
+          Caption = 'Cancelar Item'
           Flat = True
           ExplicitLeft = 80
           ExplicitTop = 40
@@ -95,7 +94,7 @@ object FormPrincipal: TFormPrincipal
           ExplicitHeight = 22
         end
       end
-      object Panel1: TPanel
+      object pnlCancelarOperacao: TPanel
         AlignWithMargins = True
         Left = 5
         Top = 10
@@ -114,6 +113,7 @@ object FormPrincipal: TFormPrincipal
           Width = 185
           Height = 94
           Align = alClient
+          Brush.Color = 14341341
           Pen.Style = psClear
           Shape = stRoundRect
           ExplicitLeft = 64
@@ -121,20 +121,18 @@ object FormPrincipal: TFormPrincipal
           ExplicitWidth = 65
           ExplicitHeight = 65
         end
-        object SpeedButton1: TSpeedButton
+        object btnCancelarOperacao: TSpeedButton
           Left = 0
           Top = 0
           Width = 185
           Height = 94
           Align = alClient
+          Caption = 'Cancelar Opera'#231#227'o'
           Flat = True
-          ExplicitLeft = 80
-          ExplicitTop = 40
-          ExplicitWidth = 23
-          ExplicitHeight = 22
+          ExplicitTop = -4
         end
       end
-      object Panel2: TPanel
+      object pnlConsultarPreco: TPanel
         AlignWithMargins = True
         Left = 193
         Top = 10
@@ -147,13 +145,13 @@ object FormPrincipal: TFormPrincipal
         BevelOuter = bvNone
         Caption = 'object Panel1: TPanel'
         TabOrder = 2
-        ExplicitLeft = 5
         object Shape2: TShape
           Left = 0
           Top = 0
           Width = 185
           Height = 94
           Align = alClient
+          Brush.Color = 14341341
           Pen.Style = psClear
           Shape = stRoundRect
           ExplicitLeft = 64
@@ -161,12 +159,13 @@ object FormPrincipal: TFormPrincipal
           ExplicitWidth = 65
           ExplicitHeight = 65
         end
-        object SpeedButton2: TSpeedButton
+        object btnCnsultarPreco: TSpeedButton
           Left = 0
           Top = 0
           Width = 185
           Height = 94
           Align = alClient
+          Caption = 'Consultar Pre'#231'o'
           Flat = True
           ExplicitLeft = 80
           ExplicitTop = 40
@@ -174,7 +173,7 @@ object FormPrincipal: TFormPrincipal
           ExplicitHeight = 22
         end
       end
-      object Panel4: TPanel
+      object pnlAbrirCaixa: TPanel
         AlignWithMargins = True
         Left = 381
         Top = 10
@@ -187,13 +186,13 @@ object FormPrincipal: TFormPrincipal
         BevelOuter = bvNone
         Caption = 'object Panel1: TPanel'
         TabOrder = 3
-        ExplicitLeft = 5
         object Shape4: TShape
           Left = 0
           Top = 0
           Width = 185
           Height = 94
           Align = alClient
+          Brush.Color = 14341341
           Pen.Style = psClear
           Shape = stRoundRect
           ExplicitLeft = 64
@@ -201,12 +200,13 @@ object FormPrincipal: TFormPrincipal
           ExplicitWidth = 65
           ExplicitHeight = 65
         end
-        object SpeedButton4: TSpeedButton
+        object btnAbrirCaixa: TSpeedButton
           Left = 0
           Top = 0
           Width = 185
           Height = 94
           Align = alClient
+          Caption = 'Abrir Caixa'
           Flat = True
           ExplicitLeft = 80
           ExplicitTop = 40
@@ -214,7 +214,7 @@ object FormPrincipal: TFormPrincipal
           ExplicitHeight = 22
         end
       end
-      object Panel5: TPanel
+      object pnlCancelarVenda: TPanel
         AlignWithMargins = True
         Left = 569
         Top = 10
@@ -227,13 +227,13 @@ object FormPrincipal: TFormPrincipal
         BevelOuter = bvNone
         Caption = 'object Panel1: TPanel'
         TabOrder = 4
-        ExplicitLeft = 5
         object Shape5: TShape
           Left = 0
           Top = 0
           Width = 185
           Height = 94
           Align = alClient
+          Brush.Color = 14341341
           Pen.Style = psClear
           Shape = stRoundRect
           ExplicitLeft = 64
@@ -241,12 +241,13 @@ object FormPrincipal: TFormPrincipal
           ExplicitWidth = 65
           ExplicitHeight = 65
         end
-        object SpeedButton5: TSpeedButton
+        object btnCancelarVenda: TSpeedButton
           Left = 0
           Top = 0
           Width = 185
           Height = 94
           Align = alClient
+          Caption = 'Cancelar Venda'
           Flat = True
           ExplicitLeft = 80
           ExplicitTop = 40
@@ -254,26 +255,27 @@ object FormPrincipal: TFormPrincipal
           ExplicitHeight = 22
         end
       end
-      object Panel6: TPanel
+      object pnlMaisFuncoes: TPanel
         AlignWithMargins = True
-        Left = 945
+        Left = 942
         Top = 10
         Width = 185
         Height = 94
         Margins.Left = 0
         Margins.Top = 0
         Margins.Bottom = 0
-        Align = alLeft
+        Align = alRight
         BevelOuter = bvNone
         Caption = 'object Panel1: TPanel'
         TabOrder = 5
-        ExplicitLeft = 5
+        ExplicitLeft = 945
         object Shape6: TShape
           Left = 0
           Top = 0
           Width = 185
           Height = 94
           Align = alClient
+          Brush.Color = 14341341
           Pen.Style = psClear
           Shape = stRoundRect
           ExplicitLeft = 64
@@ -281,12 +283,13 @@ object FormPrincipal: TFormPrincipal
           ExplicitWidth = 65
           ExplicitHeight = 65
         end
-        object SpeedButton6: TSpeedButton
+        object btnMaisFuncoes: TSpeedButton
           Left = 0
           Top = 0
           Width = 185
           Height = 94
           Align = alClient
+          Caption = 'Mais Fun'#231#245'es >>'
           Flat = True
           ExplicitLeft = 80
           ExplicitTop = 40
@@ -303,7 +306,6 @@ object FormPrincipal: TFormPrincipal
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitWidth = 1124
       object pnlOperacoes: TPanel
         Left = 735
         Top = 0
@@ -312,7 +314,6 @@ object FormPrincipal: TFormPrincipal
         Align = alRight
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitLeft = 724
       end
       object pnlGrid: TPanel
         Left = 0
@@ -322,7 +323,6 @@ object FormPrincipal: TFormPrincipal
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitWidth = 724
       end
     end
   end
