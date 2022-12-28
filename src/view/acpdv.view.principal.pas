@@ -8,7 +8,7 @@ uses
   Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls, Vcl.Imaging.jpeg;
 
 type
-  TFormPrincipal = class(TForm)
+  TpagePrincipal = class(TForm)
     pnlContainer: TPanel;
     pnlTitulo: TPanel;
     pnlButton: TPanel;
@@ -69,13 +69,13 @@ type
   end;
 
 var
-  FormPrincipal: TFormPrincipal;
+  pagePrincipal: TpagePrincipal;
 
 implementation
 
 {$R *.dfm}
 
-procedure TFormPrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TpagePrincipal.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Application.Terminate;
   FreeAndNil(FormPrincipal);

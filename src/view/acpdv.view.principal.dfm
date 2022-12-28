@@ -1,4 +1,4 @@
-object FormPrincipal: TFormPrincipal
+object pagePrincipal: TpagePrincipal
   Left = 0
   Top = 0
   Caption = 'PDV'
@@ -349,9 +349,9 @@ object FormPrincipal: TFormPrincipal
       ExplicitWidth = 1135
       object pnlOperacoes: TPanel
         AlignWithMargins = True
-        Left = 684
+        Left = 600
         Top = 3
-        Width = 501
+        Width = 585
         Height = 550
         Align = alRight
         BevelOuter = bvNone
@@ -360,7 +360,7 @@ object FormPrincipal: TFormPrincipal
           AlignWithMargins = True
           Left = 3
           Top = 477
-          Width = 495
+          Width = 579
           Height = 70
           Align = alBottom
           BevelOuter = bvNone
@@ -369,7 +369,7 @@ object FormPrincipal: TFormPrincipal
           object Label1: TLabel
             Left = 0
             Top = 0
-            Width = 495
+            Width = 579
             Height = 19
             Align = alTop
             Caption = 'Total da Compra'
@@ -384,7 +384,7 @@ object FormPrincipal: TFormPrincipal
           object pnlEdtTotalCompra: TPanel
             Left = 0
             Top = 19
-            Width = 495
+            Width = 579
             Height = 51
             Align = alClient
             BevelOuter = bvNone
@@ -399,7 +399,7 @@ object FormPrincipal: TFormPrincipal
             object Shape7: TShape
               Left = 3
               Top = 3
-              Width = 489
+              Width = 573
               Height = 45
               Align = alClient
               Brush.Color = 7119398
@@ -414,7 +414,7 @@ object FormPrincipal: TFormPrincipal
               AlignWithMargins = True
               Left = 6
               Top = 6
-              Width = 483
+              Width = 567
               Height = 39
               Align = alClient
               Alignment = taCenter
@@ -434,7 +434,7 @@ object FormPrincipal: TFormPrincipal
           AlignWithMargins = True
           Left = 3
           Top = 401
-          Width = 495
+          Width = 579
           Height = 70
           Align = alBottom
           BevelOuter = bvNone
@@ -444,7 +444,7 @@ object FormPrincipal: TFormPrincipal
           object Label3: TLabel
             Left = 0
             Top = 0
-            Width = 495
+            Width = 579
             Height = 19
             Align = alTop
             Caption = 'Sub. Total'
@@ -459,7 +459,7 @@ object FormPrincipal: TFormPrincipal
           object Panel2: TPanel
             Left = 0
             Top = 19
-            Width = 495
+            Width = 579
             Height = 51
             Align = alClient
             BevelOuter = bvNone
@@ -474,7 +474,7 @@ object FormPrincipal: TFormPrincipal
             object Shape8: TShape
               Left = 3
               Top = 3
-              Width = 489
+              Width = 573
               Height = 45
               Align = alClient
               Brush.Color = 7119398
@@ -489,7 +489,7 @@ object FormPrincipal: TFormPrincipal
               AlignWithMargins = True
               Left = 6
               Top = 6
-              Width = 483
+              Width = 567
               Height = 39
               Align = alClient
               Alignment = taCenter
@@ -509,7 +509,7 @@ object FormPrincipal: TFormPrincipal
           AlignWithMargins = True
           Left = 3
           Top = 325
-          Width = 495
+          Width = 579
           Height = 70
           Align = alBottom
           BevelOuter = bvNone
@@ -519,7 +519,7 @@ object FormPrincipal: TFormPrincipal
           object Label5: TLabel
             Left = 0
             Top = 0
-            Width = 495
+            Width = 579
             Height = 19
             Align = alTop
             Caption = 'Quantidade'
@@ -534,7 +534,7 @@ object FormPrincipal: TFormPrincipal
           object Panel3: TPanel
             Left = 0
             Top = 19
-            Width = 495
+            Width = 579
             Height = 51
             Align = alClient
             BevelOuter = bvNone
@@ -549,7 +549,7 @@ object FormPrincipal: TFormPrincipal
             object Shape9: TShape
               Left = 3
               Top = 3
-              Width = 489
+              Width = 573
               Height = 45
               Align = alClient
               Brush.Color = 7119398
@@ -564,7 +564,7 @@ object FormPrincipal: TFormPrincipal
               AlignWithMargins = True
               Left = 6
               Top = 6
-              Width = 483
+              Width = 567
               Height = 39
               Align = alClient
               Alignment = taCenter
@@ -590,7 +590,7 @@ object FormPrincipal: TFormPrincipal
           AlignWithMargins = True
           Left = 3
           Top = 249
-          Width = 495
+          Width = 579
           Height = 70
           Align = alBottom
           BevelOuter = bvNone
@@ -600,7 +600,7 @@ object FormPrincipal: TFormPrincipal
           object Label6: TLabel
             Left = 0
             Top = 0
-            Width = 495
+            Width = 579
             Height = 19
             Align = alTop
             Caption = 'Pre'#231'o'
@@ -615,7 +615,7 @@ object FormPrincipal: TFormPrincipal
           object Panel4: TPanel
             Left = 0
             Top = 19
-            Width = 495
+            Width = 579
             Height = 51
             Align = alClient
             BevelOuter = bvNone
@@ -630,7 +630,7 @@ object FormPrincipal: TFormPrincipal
             object Shape10: TShape
               Left = 3
               Top = 3
-              Width = 489
+              Width = 573
               Height = 45
               Align = alClient
               Brush.Color = 7119398
@@ -645,7 +645,7 @@ object FormPrincipal: TFormPrincipal
               AlignWithMargins = True
               Left = 6
               Top = 6
-              Width = 483
+              Width = 567
               Height = 39
               Align = alClient
               Alignment = taCenter
@@ -666,7 +666,7 @@ object FormPrincipal: TFormPrincipal
           AlignWithMargins = True
           Left = 3
           Top = 173
-          Width = 495
+          Width = 579
           Height = 70
           Align = alBottom
           BevelOuter = bvNone
@@ -676,7 +676,7 @@ object FormPrincipal: TFormPrincipal
           object Label8: TLabel
             Left = 0
             Top = 0
-            Width = 495
+            Width = 579
             Height = 19
             Align = alTop
             Caption = 'Produto'
@@ -691,7 +691,7 @@ object FormPrincipal: TFormPrincipal
           object Panel5: TPanel
             Left = 0
             Top = 19
-            Width = 495
+            Width = 579
             Height = 51
             Align = alClient
             BevelOuter = bvNone
@@ -704,7 +704,7 @@ object FormPrincipal: TFormPrincipal
             object Shape11: TShape
               Left = 3
               Top = 3
-              Width = 489
+              Width = 573
               Height = 45
               Align = alClient
               Brush.Color = 7119398
@@ -719,7 +719,7 @@ object FormPrincipal: TFormPrincipal
               AlignWithMargins = True
               Left = 6
               Top = 6
-              Width = 483
+              Width = 567
               Height = 39
               Align = alClient
               Alignment = taCenter
@@ -742,7 +742,7 @@ object FormPrincipal: TFormPrincipal
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 495
+          Width = 579
           Height = 164
           Align = alClient
           BevelOuter = bvNone
@@ -755,7 +755,7 @@ object FormPrincipal: TFormPrincipal
             AlignWithMargins = True
             Left = 3
             Top = 3
-            Width = 489
+            Width = 573
             Height = 158
             Align = alClient
             Picture.Data = {
@@ -915,7 +915,7 @@ object FormPrincipal: TFormPrincipal
         AlignWithMargins = True
         Left = 3
         Top = 3
-        Width = 675
+        Width = 591
         Height = 550
         Align = alClient
         BevelOuter = bvNone
@@ -925,7 +925,7 @@ object FormPrincipal: TFormPrincipal
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 669
+          Width = 585
           Height = 544
           Align = alClient
           BorderStyle = bsNone
